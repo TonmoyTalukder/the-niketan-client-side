@@ -5,6 +5,7 @@ import './Footer.css';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+    
     return (
         <>
             <div>
@@ -22,19 +23,19 @@ const Footer = () => {
                             <div className="col-lg-2 col-md-6 px-0">
                                 <h5 className="text-white mb-3">Who Are We?</h5>
                                 <ul className="list-unstyled text-muted">
-                                    <li><Link to="/">Home</Link></li>
-                                    <li><Link to="/about">About</Link></li>
-                                    <li><Link to="/apartments">Get started</Link></li>
-                                    <li><Link to="/faq">FAQ</Link></li>
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="/apartments">Get started</a></li>
+                                    <li><a href="/contact">Contact</a></li>
+                                    <li><a href="/faq">FAQ</a></li>
                                 </ul>
                             </div>
                             <div className="col-lg-2 col-md-6 px-0">
                                 <h5 className="text-white mb-3">Stay Tuned</h5>
                                 <ul className="list-unstyled text-muted">
-                                    <li><Link to="/home/#premium-apartments">New Apartments</Link></li>
-                                    <li><Link to="/home/#top-destinations">Best Destinations</Link></li>
-                                    <li><Link to="/apartments">All Apartments</Link></li>
-                                    <li><Link to="/home/#reviews">Reviews</Link></li>
+                                    <li><a href="/home/#premium-apartments">Premium Apartments</a></li>
+                                    <li><a href="/home/#our-hotest-cities">Best locations</a></li>
+                                    <li><a href="/apartments">All Apartments</a></li>
+                                    <li><a href="/home/#reviews">Reviews</a></li>
                                 </ul>
                             </div>
                             <div className="col-lg-4 col-md-6 px-0">
@@ -42,8 +43,11 @@ const Footer = () => {
                                 <p className="small text-muted">Stay tuned with our update apartments news. Subscribe to our newsletter and get all updates to your inbox of email!</p>
                                 <form action="#">
                                     <div className="input-group mb-3">
-                                        <input className="form-control" type="text" placeholder="Recipient's email" aria-label="Recipient's username" aria-describedby="button-addon2"/>
-                                        <button className="btn btn-primary" id="button-addon2" type="button"><i className="fas fa-paper-plane">Subscribe</i></button>
+                                        <input className="form-control text-warning" type="text" color="white" placeholder="Recipient's email" aria-label="Recipient's username" aria-describedby="button-addon2"/>
+
+                                        <button className="btn btn-primary" id="button-addon2" type="button">
+                                            <i className="fas fa-paper-plane">Subscribe</i>
+                                        </button>
                                     </div>
                                 </form>
                             </div>

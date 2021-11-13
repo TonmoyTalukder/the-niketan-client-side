@@ -1,3 +1,4 @@
+import { Box } from '@mui/system';
 import React from 'react';
 import Footer from '../../Shared/Footer/Footer';
 import Header from '../../Shared/Header/Header';
@@ -14,9 +15,15 @@ const Home = () => {
             <Header/>
             <Banner/>
             <WhyWeAre/>
-            <PremiumApartments/>
-            <OurHotestCities/>
-            <Reviews/>
+            <Box id="premium-apartments">
+                <PremiumApartments/>
+            </Box>
+            <Box id="our-hotest-cities">
+                <OurHotestCities/>
+            </Box>
+            <Box id="reviews">
+                <Reviews/>
+            </Box>
             <Footer/>
         </>
     );
