@@ -12,7 +12,7 @@ const PremiumApartment = ({newPremiumApartment}) => {
     return (
         <>
             <Grid item xs={12} sm={5} md={4} lg={3} className="specialCenter">
-            <Card sx={{ width: 345, backgroundColor: '#4a4a4a', color: 'white' }}>
+            <Card className="bgSpecial" sx={{ width: 345, backgroundColor: '#4a4a4a', color: 'white' }}>
                         <CardMedia
                             component="img"
                             height="140"
