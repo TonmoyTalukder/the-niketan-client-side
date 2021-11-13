@@ -193,25 +193,25 @@ function Dashboard(props) {
                 <PrivateRoute exact path={path}>
                     <DashboardHome></DashboardHome>
                 </PrivateRoute>
-                <ClientRoute path={`${path}/myOrders`}>
+                <ClientRoute exact path={`${path}/myOrders`}>
                     <MyOrders></MyOrders>
                 </ClientRoute>
-                <PrivateRoute path={`${path}/manageAllBookings`}>
+                <PrivateRoute exact path={`${path}/manageAllBookings`}>
                     <ManageAllBookings></ManageAllBookings>
                 </PrivateRoute>
-                <PrivateRoute path={`${path}/addAnApartment`}>
+                <PrivateRoute exact path={`${path}/addAnApartment`}>
                     <AddAnApartment></AddAnApartment>
                 </PrivateRoute>
-                <PrivateRoute path={`${path}/makeAdmin`}>
+                <PrivateRoute exact path={`${path}/makeAdmin`}>
                     <MakeAdmin></MakeAdmin>
                 </PrivateRoute>
-                <PrivateRoute path={`${path}/manageApartments`}>
+                <PrivateRoute exact path={`${path}/manageApartments`}>
                     <ManageApartments></ManageApartments>
                 </PrivateRoute>
-                <ClientRoute path={`${path}/pay`}>
+                <ClientRoute exact path={`${path}/pay`}>
                     <Pay></Pay>
                 </ClientRoute>
-                <ClientRoute path={`${path}/review`}>
+                <ClientRoute exact path={`${path}/review`}>
                     <Review></Review>
                 </ClientRoute>
 
