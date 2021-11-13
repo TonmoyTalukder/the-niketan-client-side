@@ -8,7 +8,7 @@ const NotFound = () => {
     return (
         <Box style={{ backgroundColor: '#2a2e32'}}>
             <Header/>
-            <Box sx={{ width: '100%'}}>
+            <Box sx={{ width: '100%', padding:'50px'}}>
                 <Typography  sx={{color: 'red'}} variant="h1" component="div" gutterBottom>
                     <b>404! Not Found</b>
                 </Typography>
