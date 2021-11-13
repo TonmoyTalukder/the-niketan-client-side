@@ -1,0 +1,9 @@
+.bannerText {
+  /* display: inline-flex; */
+  /* display: flexbox; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: black;
+}

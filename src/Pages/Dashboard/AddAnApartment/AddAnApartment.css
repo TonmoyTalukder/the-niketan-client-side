@@ -1,0 +1,19 @@
+body {
+  background-color: white;
+}
+.addAnApartment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: black;
+}
+.addApartmentBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: black;
+}
+.addApartmentBannerImg {
+}

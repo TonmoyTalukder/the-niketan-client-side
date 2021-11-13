@@ -1,0 +1,9 @@
+.why-we-are-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  height: 100%;
+  color: black;
+  width: 100%;
+}

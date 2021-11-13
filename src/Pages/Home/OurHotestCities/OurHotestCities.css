@@ -1,0 +1,17 @@
+.OurHottestCities {
+  background-color: rgb(163, 163, 163);
+  /* margin-top: -33px; */
+}
+.hotestCities {
+  padding-top: 5%;
+  padding-bottom: 1%;
+}
+.hotestCities h4 {
+  margin-top: 1%;
+}
+.hotestCities:hover {
+  filter: grayscale(90%);
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+}
