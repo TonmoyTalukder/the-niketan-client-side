@@ -111,13 +111,12 @@ function Dashboard(props) {
                     <Link to={`${url}/review`}>Review</Link>
                 </ListItem>
                 <Divider />
-
-                <ListItem button>
-                    <ListItemText onClick={logout} color="inherit">Logout</ListItemText>
-                </ListItem>
-                <Divider />
               </Box>
             }
+            <ListItem button>
+                <ListItemText onClick={logout} color="inherit">Logout</ListItemText>
+            </ListItem>
+            <Divider />
       </List>      
     </div>
   );
