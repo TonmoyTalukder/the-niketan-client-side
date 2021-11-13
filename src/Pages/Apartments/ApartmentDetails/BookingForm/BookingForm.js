@@ -29,7 +29,7 @@ const BookingForm = ({apartmentDetails}) => {
         // Send to the Server
         console.log(booking);
 
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://the-niketan-server.herokuapp.com/bookings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

@@ -7,7 +7,7 @@ const ManageAllBooking = ({customerBooking}) => {
     const handleOrders = id=> {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-        const url = `http://localhost:5000/bookings/${id}`;
+        const url = `https://the-niketan-server.herokuapp.com/bookings/${id}`;
         fetch(url, {
             method: 'DELETE'
         })
@@ -24,7 +24,7 @@ const ManageAllBooking = ({customerBooking}) => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
             const status = {status:"Processing"};
-            const url = `http://localhost:5000/bookings/${id}`;
+            const url = `https://the-niketan-server.herokuapp.com/bookings/${id}`;
             fetch(url, {
                 method: 'PUT',
                 headers: {

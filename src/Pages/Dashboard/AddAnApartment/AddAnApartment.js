@@ -31,7 +31,7 @@ const AddAnApartment = () => {
         }
         // Send to the Server
         // console.log(apartment);
-        fetch('http://localhost:5000/apartments', {
+        fetch('https://the-niketan-server.herokuapp.com/apartments', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

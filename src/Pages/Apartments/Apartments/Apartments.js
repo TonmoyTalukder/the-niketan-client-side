@@ -12,7 +12,7 @@ const Apartments = () => {
     const [apartments, setApartments] = useState([]);
 
     useEffect( () =>{
-        const url = 'http://localhost:5000/apartments'
+        const url = 'https://the-niketan-server.herokuapp.com/apartments'
         fetch(url)
         .then(res => res.json())
         .then(data => setApartments(data));

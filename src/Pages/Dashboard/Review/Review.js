@@ -22,7 +22,7 @@ const Review = () => {
         console.log(reviews);
         if(review.rating<=5)
         {
-            fetch('http://localhost:5000/reviews', {
+            fetch('https://the-niketan-server.herokuapp.com/reviews', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

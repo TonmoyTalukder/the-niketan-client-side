@@ -92,7 +92,7 @@ const useFirebase = () => {
 
     // Admin
     useEffect(() => {
-      fetch(`http://localhost:5000/users/${user.email}`)
+      fetch(`https://the-niketan-server.herokuapp.com/users/${user.email}`)
           .then((response) => response.json())
           .then((data) => setAdmin(data.admin))
           .catch((error) => {
@@ -114,7 +114,7 @@ const useFirebase = () => {
     // Save User informations in database
     const saveUser = (email, displayName, method) => {
       const user = {email, displayName};
-      fetch('http://localhost:5000/users', {
+      fetch('https://the-niketan-server.herokuapp.com/users', {
         method: method,
         headers: {
           'content-type': 'application/json'

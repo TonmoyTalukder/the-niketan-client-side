@@ -17,7 +17,7 @@ const ManageAllBookings = () => {
     const [customerBookings, setCustomerBookings] = useState([]);
 
     useEffect( () =>{
-        const url = 'http://localhost:5000/allbookings'
+        const url = 'https://the-niketan-server.herokuapp.com/allbookings'
         fetch(url)
         .then(res => res.json())
         .then(data => setCustomerBookings(data));

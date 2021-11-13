@@ -22,7 +22,7 @@ const ApartmentDetails = () => {
     const [apartmentDetails, setApartmentDetails] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/apartments/${apartmentId}`)
+        fetch(`https://the-niketan-server.herokuapp.com/apartments/${apartmentId}`)
         .then(res=> res.json())
         .then(data=> setApartmentDetails(data));
     }, []);

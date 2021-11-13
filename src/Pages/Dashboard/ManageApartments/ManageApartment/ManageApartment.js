@@ -7,7 +7,7 @@ const ManageApartment = ({apartment}) => {
     const handleOrders = id=> {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-        const url = `http://localhost:5000/apartments/${id}`;
+        const url = `https://the-niketan-server.herokuapp.com/apartments/${id}`;
         fetch(url, {
             method: 'DELETE'
         })
